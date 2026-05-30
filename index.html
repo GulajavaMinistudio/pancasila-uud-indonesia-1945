@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO (TASK-020) — diperbarui secara dinamis oleh updateMetaTags() saat navigasi -->
+    <meta
+      name="description"
+      content="Baca Pancasila, Pembukaan UUD 1945, dan seluruh Pasal UUD 1945 secara online. Lengkap, akurat, dan dapat diakses kapan saja."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Indonesian" />
+    <meta name="author" content="Pancasila &amp; UUD 1945 Web App" />
+
+    <!-- Open Graph (TASK-020) — default untuk halaman utama -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pancasila &amp; UUD 1945" />
+    <meta property="og:title" content="Pancasila &amp; UUD 1945 — Konstitusi Indonesia" />
+    <meta
+      property="og:description"
+      content="Baca Pancasila, Pembukaan UUD 1945, dan seluruh Pasal UUD 1945 secara online. Lengkap, akurat, dan dapat diakses kapan saja."
+    />
+    <meta
+      property="og:image"
+      content="https://gulajavaministudio.github.io/pancasila-uud-indonesia-1945/images/og-banner.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Card (TASK-020) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pancasila &amp; UUD 1945 — Konstitusi Indonesia" />
+    <meta
+      name="twitter:description"
+      content="Baca Pancasila, Pembukaan UUD 1945, dan seluruh Pasal UUD 1945 secara online. Lengkap, akurat, dan dapat diakses kapan saja."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gulajavaministudio.github.io/pancasila-uud-indonesia-1945/images/og-banner.png"
+    />
+
+    <!-- Alternate language — memperjelas bahasa konten ke Google (GUD-SEO-005) -->
+    <link
+      rel="alternate"
+      hreflang="id"
+      href="https://gulajavaministudio.github.io/pancasila-uud-indonesia-1945/"
+    />
+
+    <!-- Theme color — merah primer aplikasi (TASK-008) -->
+    <meta name="theme-color" content="#C62828" />
+
+    <!-- Apple PWA meta tags (TASK-008) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="UUD 1945" />
+    <link rel="apple-touch-icon" href="/pancasila-uud-indonesia-1945/images/apple-touch-icon.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/pancasila-uud-indonesia-1945/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/pancasila-uud-indonesia-1945/images/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/pancasila-uud-indonesia-1945/images/favicon.ico" />
+    <link rel="manifest" href="/pancasila-uud-indonesia-1945/images/site.webmanifest" />
+
+    <!-- manifest.json diinjeksi oleh vite-plugin-pwa saat build -->
+    <!-- Public Sans — typeface institusional (preconnect untuk performa) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <title>Pancasila &amp; UUD 1945</title>
+
+    <!-- Google Analytics 4 (TASK-038)
+         Measurement ID diambil dari env Vite: VITE_GA_MEASUREMENT_ID -->
+    <script>
+      (function () {
+        var gaId = 'G-YQDY3JRP9R';
+        var hasValidGaId = typeof gaId === 'string' && /^G-[A-Z0-9]+$/.test(gaId);
+        if (!hasValidGaId) return;
+
+        window.__GA_MEASUREMENT_ID__ = gaId;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag =
+          window.gtag ||
+          function () {
+            dataLayer.push(arguments);
+          };
+
+        window.gtag('js', new Date());
+        window.gtag('config', gaId, {
+          send_page_view: false,
+          anonymize_ip: true,
+        });
+
+        var gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
+        document.head.appendChild(gaScript);
+      })();
+    </script>
+
+    <!-- WebSite JSON-LD dengan SearchAction — sitewide (TASK-031) -->
+    <!-- Script ini bersifat statis dan tidak dikelola oleh injectJsonLd() di runtime -->
+    <script type="application/ld+json" id="__jsonld-website">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Pancasila & UUD 1945",
+        "url": "https://gulajavaministudio.github.io/pancasila-uud-indonesia-1945",
+        "description": "Baca Pancasila, Pembukaan UUD 1945, dan seluruh Pasal UUD 1945 secara online. Lengkap, akurat, dan dapat diakses kapan saja.",
+        "inLanguage": "id",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://gulajavaministudio.github.io/pancasila-uud-indonesia-1945/cari?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script>
+      // SPA Routing Receiver — memulihkan path yang di-redirect dari 404.html
+      // Script ini hanya aktif saat request datang dari GitHub Pages 404.html redirect
+      // (kondisi: l.search dimulai dengan '/')
+      // Referensi: https://github.com/rafgraph/spa-github-pages
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/pancasila-uud-indonesia-1945/assets/index-DqLdtWsg.js"></script>
+    <link rel="stylesheet" crossorigin href="/pancasila-uud-indonesia-1945/assets/index-4tqHMkiW.css">
+  <link rel="manifest" href="/pancasila-uud-indonesia-1945/manifest.json"></head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

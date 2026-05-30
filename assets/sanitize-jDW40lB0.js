@@ -1,0 +1,1 @@
+function r(e){return typeof e!="string"?e?String(e):"":e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}function a(e){return r(e)}export{a,r as e};
