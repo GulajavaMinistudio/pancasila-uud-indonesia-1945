@@ -1,13 +1,13 @@
-import{configurePageContainer as i,setSidebarContent as t,buildPhaseOneSidebarItems as s,setPageTitle as r}from"./pageHelpers-BpmCgv2g.js";const l="v1.0.0",d="Pancasila &amp; UUD 1945",a={koreksi:"#",saran:"#"};class p{constructor(e,{sidebarEl:n}){this.container=e,this.sidebarEl=n}mount(){i(this.container),t(this.sidebarEl,{title:"Navigasi Hukum",subtitle:"Pancasila & UUD 1945",items:s("/tentang")}),r("Tentang Aplikasi"),this.container.innerHTML=o()}}function o(){return`
+import{configurePageContainer as n,setSidebarContent as t,buildPhaseOneSidebarItems as s,setPageTitle as r}from"./pageHelpers-BpmCgv2g.js";const l="v1.0.0",o="Pancasila &amp; UUD 1945",d="https://www.mkri.id/",a={koreksi:"#",saran:"#"};class h{constructor(e,{sidebarEl:i}){this.container=e,this.sidebarEl=i}mount(){n(this.container),t(this.sidebarEl,{title:"Navigasi Hukum",subtitle:"Pancasila & UUD 1945",items:s("/tentang")}),r("Tentang Aplikasi"),this.container.innerHTML=c()}}function c(){return`
     <div class="page-shell tentang-page" data-tentang>
 
-      ${c()}
       ${b()}
       ${u()}
       ${m()}
+      ${k()}
 
     </div>
-  `}function c(){return`
+  `}function b(){return`
     <section class="tentang-hero text-center mb-4" aria-label="Identitas aplikasi">
       <div
         class="tentang-logo-circle mx-auto mb-3"
@@ -16,13 +16,13 @@ import{configurePageContainer as i,setSidebarContent as t,buildPhaseOneSidebarIt
       >
         <i class="bi bi-shield-fill tentang-logo-icon" aria-hidden="true"></i>
       </div>
-      <h1 class="tentang-app-name h4 fw-bold mb-2">${d}</h1>
+      <h1 class="tentang-app-name h4 fw-bold mb-2">${o}</h1>
       <span class="tentang-version-badge badge rounded-pill border">
         <i class="bi bi-patch-check me-1" aria-hidden="true"></i>
         ${l}
       </span>
     </section>
-  `}function b(){return`
+  `}function u(){return`
     <section class="card border rounded-3 mb-4" aria-label="Deskripsi aplikasi">
       <div class="card-body">
         <p class="tentang-description mb-0 text-secondary text-center lh-lg">
@@ -32,7 +32,7 @@ import{configurePageContainer as i,setSidebarContent as t,buildPhaseOneSidebarIt
         </p>
       </div>
     </section>
-  `}function u(){return`
+  `}function m(){return`
     <section
       class="card border rounded-3 mb-4 tentang-sumber-data"
       aria-label="Sumber data aplikasi"
@@ -55,10 +55,22 @@ import{configurePageContainer as i,setSidebarContent as t,buildPhaseOneSidebarIt
             Naskah komprehensif merujuk pada publikasi resmi
             Majelis Permusyawaratan Rakyat Republik Indonesia.
           </p>
+          <p class="small mb-0 mt-2">
+            Referensi tambahan:
+            <a
+              href="${d}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buka situs resmi Mahkamah Konstitusi (membuka tab baru)"
+              data-mkri-link
+            >
+              Situs Resmi Mahkamah Konstitusi
+            </a>
+          </p>
         </div>
       </div>
     </section>
-  `}function m(){return`
+  `}function k(){return`
     <section class="tentang-bantuan" aria-label="Bantuan dan dukungan">
       <h2 class="h6 fw-bold mb-3">Bantuan &amp; Dukungan</h2>
       <div class="d-flex flex-column gap-2">
@@ -86,4 +98,4 @@ import{configurePageContainer as i,setSidebarContent as t,buildPhaseOneSidebarIt
         </a>
       </div>
     </section>
-  `}export{p as TentangPage};
+  `}export{h as TentangPage};
